@@ -15,4 +15,5 @@ Hello and welcome to
 
 	2a. It's generally encouraged to do the copy/paste method to ensure correct installation of an apworld, especially if you are installing an updated version.
 	2b. If you plan on utilizing the Universal Tracker, aftering downloading the apworld file, you would also copy/paste or double click to install it in your `custom_worlds` folder within your `Archipelago` folder.
+
 3. After that, 
