@@ -18,13 +18,11 @@ To get started, ensure you have the following components installed:
 > [!TIP]
 > While not required to play, having the latest version of the [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) is not only incredibly helpful in general for knowing what locations are considered in logic as you are playing in any Archipelago session or reporting logic issues to apworld creators, but it is especially helpful with the Manual Client as it causes all locations that are in logic to be highlighted!
 
-## Getting It All Setup!
+## 🛠️ Phase 1: Getting Everything Ready!
 
-1.  You'll first need to download and install the latest version of the **Archipelago Launcher**, the link to which is provided above.
-
-2.  Next you'll need to download and install the latest version of the **Manual Client**, the link to which is provided above. To install, you can either copy the apworld file, then navigate to your `custom_worlds` folder within your `Archipelago` folder and paste the apworld file there... or you can double-click the apworld file and let it install itself!
-
-	   - It's generally encouraged to do the copy/paste method to ensure correct installation of an apworld, especially if you are installing an updated version. 
+1.  **Install the APWorld:** Copy your downloaded `.apworld` file into your `/Archipelago/custom_worlds` folder. 
+    * **Pro Tip:** While you can double-click the file to install, manually copying and pasting ensures a clean install, especially when updating to a newer version.
+2.  **Refresh the Launcher:** If the Archipelago Launcher was already open, close and restart it so it can "see" your new manual files.
     
 	   - If you plan on utilizing the Universal Tracker, after downloading the apworld file, you would also copy/paste or double click to install it in your `custom_worlds` folder within your `Archipelago` folder.
 
