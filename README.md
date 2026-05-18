@@ -26,11 +26,10 @@ To get started, ensure you have the following components installed:
 
 2.  **Generate your .yaml:** Open your Archipelago Launcher and navigate to `Generate Template Options` and click Open. This will open a window to your `Templates` folder that lists all the yaml files for all your apworlds you have installed while also generating new yaml files for apworlds you just recently installed.
 
-	   - If you already had your Archipelago Launcher open while installing any new apworlds, it's best practice to close and re-open your Archipelago Launcher to refresh it. If you don't, sometimes it won't 'see' the new apworld files even though they are there, and thus won't generate a yaml for it when prompted.
+3.  In your `Templates` folder, find a yaml file named `Manual_PajamaSam1_ForsakenM.yaml` and open it. Customize it based on the experience you want while playing, then save the edited yaml file in your `Players` folder that is within your `Archipelago` folder.
 
-5.  In your `Templates` folder, find a yaml file named `Manual_PajamaSam1_ForsakenM.yaml` and open it. Customize it based on the experience you want while playing, then save the edited yaml file in your `Players` folder that is within your `Archipelago` folder.
-
-	   - For more information and guidance on how to customize/edit yaml files for intended gameplay experience, reach out to the Archipelago or Manual for Archipelago Discord servers, or check out the [Archipelago Website](https://archipelago.gg/) for further assistance/instruction.
+> [!TIP]
+> For more information and guidance on how to customize/edit yaml files for intended gameplay experience, reach out to the Archipelago or Manual for Archipelago Discord servers, or check out the [Archipelago Website](https://archipelago.gg/) for further assistance/instruction.
 
 6.  Once you have saved your edited `Manual_PajamaSam1_ForsakenM.yaml` and the yamls of any other games you wish to play in your `Players` folder, return to your Archipelago Launcher and navigate to `Generate` and click Open. The Archipelago client will then work on generating the seed for all your included yamls. If it generates successfully, you will find a zipped folder with a name that begins with 'AP_' and then a string of numbers following the underscore in your `output` folder within your `Archipelago` folder.
 
