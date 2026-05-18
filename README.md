@@ -14,7 +14,7 @@ To get started, ensure you have the following components installed:
 * **[Pajama Sam 1 .apworld](https://github.com/ForsakenM/Pajama-Sam-1-Manual-AP/releases)**: My custom manual file (available in the **Releases** section of this repo).
 * A copy of the game! ([Steam](https://store.steampowered.com/app/283960/Pajama_Sam_No_Need_to_Hide_When_Its_Dark_Outside/), [GOG](https://www.gog.com/en/game/pajama_sam_vol_1), [Nintendo Switch](https://www.nintendo.com/us/store/products/pajama-sam-no-need-to-hide-when-its-dark-outside-switch/), [PS4](https://store.playstation.com/en-us/product/UP2035-CUSA35530_00-3616316769034939), [IOS/App Store](https://apps.apple.com/us/app/pajama-sam-no-need-to-hide/id582442437), [Android/Google Play](https://play.google.com/store/apps/details?id=com.tommo.nggpepj1&hl=en_US)).
 
-	> [!TIP]
+> [!TIP]
 	> While not required to play, having the latest version of the [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) is not only incredibly helpful in general for knowing what locations are considered in logic as you are playing in any Archipelago session or reporting logic issues to apworld creators, but it is especially helpful with the Manual Client as it causes all locations that are in logic to be highlighted!
 
 ## Getting It All Setup!
