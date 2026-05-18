@@ -18,7 +18,7 @@ To get started, ensure you have the following components installed:
 > [!TIP]
 > While not required to play, having the latest version of the [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) is not only incredibly helpful in general for knowing what locations are considered in logic as you are playing in any Archipelago session or reporting logic issues to apworld creators, but it is especially helpful with the Manual Client as it causes all locations that are in logic to be highlighted!
 
-## 🛠️ Phase 1: Getting Everything Ready!
+## 🛠️ Getting Everything Ready! Phase 1: Setup and Generation.
 
 1.  **Install the APWorlds:** Copy your downloaded `.apworld` files for the Pajama Sam 1 manual, the Manual Client, and the Universal Tracker and paste them into your `/Archipelago/custom_worlds` folder. 
 > [!TIP]
@@ -26,7 +26,7 @@ To get started, ensure you have the following components installed:
 
 2.  **Generate your .yaml:** Open your Archipelago Launcher and navigate to `Generate Template Options` and click Open. This will open a window to your `Templates` folder that lists all the yaml files for all your apworlds you have installed while also generating new yaml files for apworlds you just recently installed.
 
-3.  In your `Templates` folder, find a yaml file named `Manual_PajamaSam1_ForsakenM.yaml` and open it. Customize it based on the experience you want while playing, then save the edited yaml file in your `Players` folder that is within your `Archipelago` folder.
+3.  In your `Templates` folder, find a yaml file named `Manual_PajamaSam1_ForsakenM.yaml` and open it. Customize it based on the experience you want while playing, then save the edited yaml file in your `/Archipelago/Players` folder.
 
 > [!TIP]
 > For more information and guidance on how to customize/edit yaml files for intended gameplay experience, reach out to the Archipelago or Manual for Archipelago Discord servers, or check out the [Archipelago Website](https://archipelago.gg/) for further assistance/instruction.
