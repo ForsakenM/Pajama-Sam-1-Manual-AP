@@ -21,8 +21,8 @@ To get started, ensure you have the following components installed:
 ## 🛠️ Phase 1: Getting Everything Ready!
 
 1.  **Install the APWorlds:** Copy your downloaded `.apworld` files for the Pajama Sam 1 manual, the Manual Client, and the Universal Tracker and paste them into your `/Archipelago/custom_worlds` folder. 
-	> [!TIP]
-	> If the Archipelago Launcher was already open, close and restart it so it can "see" your new manual files.
+> [!TIP]
+> If the Archipelago Launcher was already open, close and restart it so it can "see" your new manual files. Otherwise, the next step in the process can fail as the Archipelago Launcher may not reconize the addition of new `.apworld` files.
 
 3.  The next step is to open your Archipelago Launcher and navigate to `Generate Template Options` and click Open. This will open a window to your `Templates` folder that lists all the yaml files for all your apworlds you have installed while also generating new yaml files for apworlds you just recently installed.
 
