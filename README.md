@@ -18,7 +18,8 @@ To get started, ensure you have the following components installed:
 > [!TIP]
 > While not required to play, having the latest version of the [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) is not only incredibly helpful in general for knowing what locations are considered in logic as you are playing in any Archipelago session or reporting logic issues to apworld creators, but it is especially helpful with the Manual Client as it causes all locations that are in logic to be highlighted!
 
-## 🛠️ Getting Everything Ready! Phase 1: Setup and Generation.
+## 🛠️ Getting Everything Ready!
+### Phase 1: Setup and Generation.
 
 1.  **Install the APWorlds:** Copy your downloaded `.apworld` files for the Pajama Sam 1 manual, the Manual Client, and the Universal Tracker and paste them into your `/Archipelago/custom_worlds` folder. 
 > [!TIP]
