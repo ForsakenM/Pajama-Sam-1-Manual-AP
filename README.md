@@ -34,7 +34,7 @@ To get started, ensure you have the following components installed:
 4.  **Generate the Seed:** After saving your `Manual_PajamaSam1_ForsakenM.yaml` (and any other game YAMLs) to the `Players` folder, return to the Archipelago Launcher and click **Generate**. The client will generate your seed and, upon success, place an `AP_` zipped folder into your `output` folder.
 
 ### Phase 2: Hosting and Connecting.
-1.  **Host the Server:** Head to the [Archipelago Host Page](https://archipelago.gg/host) and upload your zipped `AP_` folder. Once uploaded, click **Create New Room** to generate your 'SEED INFO' page, which displays your server's port number and the link to download your patch files.
+1.  **Host the Server:** Head to the [Archipelago Host Page](https://archipelago.gg/uploads) and upload your zipped `AP_` folder. Once uploaded, click **Create New Room** to generate your 'SEED INFO' page, which displays your server's port number and the link to download your patch files.
 
 > [!TIP]
 >You can host your own server and room on your computer if you have the ability to do so by navigating to `Host` in your Archipelago Launcher (often at the top, easy to find!) and clicking Open, but it is most common to host via the Archipelago website.
