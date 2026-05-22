@@ -1,4 +1,4 @@
-# Welcome To My Pajam Sam 1 Manual AP World Randomizer!
+# Welcome To My Pajama Sam 1 Manual AP World Randomizer!
 Hello and welcome to my Pajama Sam in No Need To Hide When It's Dark Outside, most often referred to as Pajama Sam 1!
 
 Pajama Sam 1 is a point-and-click adventure game made by Humongous Entertainment with the intent of it being interactive educational content for children, but there is a certain amount of nostolgia tied to the educational games of that era and I wanted to breathe new life into the genre via Archipelago!
@@ -45,3 +45,13 @@ To get started, ensure you have the following components installed:
     * **Ready:** Click the **Manual** tab in the client—you are now ready to play!
 
 3.  **Play The Game!:** Fire up Pajama Sam 1 on your preferred device and enjoy a randomized adventure in the Land of Darkness!
+
+## 🧩 Odds and Ends!
+
+Have you lost all your stuff and don't know where to turn? While the combination of the Manual Client and the Universal Tracker should sort out your lost socks, if you still find yourself stuck in the Land of Darkness you can check out my [Google Doc](https://docs.google.com/document/d/1FNrrp4hthmcHtV0bFwUeiD-SHLxGMiSBLZJMAolIxks/edit?usp=sharing) that will have a deeper dive into the items, locations, traps, and overall logic of the manual!
+
+If you are still having issues, feel free to reach out to the Manual For Archipelago Discord Server! If it's an issue with the Manual Client or of a similar nature, they can help you out! If you are still confused on the logic or if their might be an AP World issue, feel free to ping me in the `Pajama Sam 1` channel!
+
+The above Google Doc will also list planned updates, and I encourage those who enjoy the manual to feel free to discuss ideas for it in the Discord channel, as well as for anyone with manual experience to give me any advice. Most AP projects are a labor of love, and I'm just getting started and have a lot to learn, so please feel free to coach me!
+
+And above all, thank you for checking out and playing my manual! :)
