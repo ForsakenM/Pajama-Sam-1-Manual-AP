@@ -39,6 +39,9 @@ To get started, ensure you have the following components installed:
 > [!TIP]
 >You can host your own server and room on your computer if you have the ability to do so by navigating to `Host` in your Archipelago Launcher (often at the top, easy to find!) and clicking Open, but it is most common to host via the Archipelago website.
 
-8.  To start playing your Pajama Sam 1 Manual from here, you will click the 'Download Patch File' link in your room on the Archipelago website, then once the patch file is downloaded open it. It should automatically open the Manual Client (though it might take a little bit). Once the Manual Client opens, you will take the port number from your room on the Archipelago website (the five numbers at the end of '/connect archipelago.gg:') and paste them over the five numbers at the end of 'archipelago.gg:' in the Server textbox in the Manual Client, then click the 'Connect' button. Once the Manual Client connects with the server, it will ask for a slotname which is your name from your Pajama Sam 1 yaml, which is also on the room webpage. Type or copy/paste your name in the Command textbox and enter it to finalize connection to the server and you can click the Manual tab in the client and it should be ready to go!
+2. **Connect to the Room:** * **Patch File:** Click **Download Patch File** on your room page. Opening this file will launch the **Manual Client**.
+    * **Connect:** In the Manual Client, look at the **Server** textbox. Replace the default port (the 5 numbers after `archipelago.gg:`) with the specific 5-digit port found in your room's URL. Click **Connect**.
+    * **Finalize:** Once connected, the client will ask for a **Slot Name**. Type or paste the exact name you used in your *Pajama Sam 1* YAML (also found on your room page) and press Enter.
+    * **Ready:** Click the **Manual** tab in the client—you are now ready to play!
 
-9.  Fire up Pajama Sam 1 on your preferred device and enjoy the manual!
+3.  **Play The Game!:** Fire up Pajama Sam 1 on your preferred device and enjoy a randomized adventure in the Land of Darkness!
