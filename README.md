@@ -48,7 +48,7 @@ To get started, ensure you have the following components installed:
 
 ## 🧩 Odds and Ends!
 
-Have you lost all your stuff and don't know where to turn? While the combination of the Manual Client and the Universal Tracker should sort out your lost socks, if you still find yourself stuck in the Land of Darkness you can check out my [Google Doc](https://docs.google.com/document/d/1FNrrp4hthmcHtV0bFwUeiD-SHLxGMiSBLZJMAolIxks/edit?usp=sharing) that will have a deeper dive into the items, locations, traps, and overall logic of the manual!
+Have you lost all your stuff and don't know where to turn? While the combination of the Manual Client and the Universal Tracker should sort out your lost socks, if you still find yourself stuck in the Land of Darkness you can check out my [Google Doc](https://docs.google.com/document/d/186y1VHYymWI91IeoipwO6wKrhLrZ4L3X9vjmES9zVuc/edit?usp=sharing) that will have a deeper dive into the items, locations, traps, and overall logic of the manual!
 
 If you are still having issues, feel free to reach out to the Manual For Archipelago Discord Server! If it's an issue with the Manual Client or of a similar nature, they can help you out! If you are still confused on the logic or if their might be an AP World issue, feel free to ping me in the `Pajama Sam 1` channel!
 
