@@ -52,6 +52,6 @@ Have you lost all your stuff and don't know where to turn? While the combination
 
 If you are still having issues, feel free to reach out to the Manual For Archipelago Discord Server! If it's an issue with the Manual Client or of a similar nature, they can help you out! If you are still confused on the logic or if their might be an AP World issue, feel free to ping me in the `Pajama Sam 1` channel!
 
-The above Google Doc will also list planned updates, and I encourage those who enjoy the manual to feel free to discuss ideas for it in the Discord channel, as well as for anyone with manual experience to give me any advice. Most AP projects are a labor of love, and I'm just getting started and have a lot to learn, so please feel free to coach me!
+The above Google Doc will also list planned updates, and I encourage those who enjoy the manual to feel free to discuss ideas for it in the Discord channel, as well as for anyone with manual experience to give me any advice. Most AP projects are a labor of love, and I'm just getting started and have a lot to learn, so please feel free to coach me! :)
 
-And above all, thank you for checking out and playing my manual! :)
+And above all, thank you for checking out and playing my manual! :D
