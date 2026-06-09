@@ -1,618 +1,621 @@
-[
-  {
-    "name": "Sam's Bedroom - Scarf On Coatrack",
-    "category": [
-      "Prologue"
-    ],
-    "requires": "",
-    "region": "Sam's Bedroom"
-  },
-  {
-    "name": "Sam's Bedroom - Trash Can",
-    "category": [
-      "Prologue"
-    ],
-    "requires": "",
-    "region": "Sam's Bedroom"
-  },
-  {
-    "name": "Sam's Bedroom - Under Bed",
-    "category": [
-      "Prologue"
-    ],
-    "requires": "",
-    "region": "Sam's Bedroom"
-  },
-  {
-    "name": "Sam's Bedroom - Under Rug",
-    "category": [
-      "Prologue"
-    ],
-    "requires": "",
-    "region": "Sam's Bedroom"
-  },
-  {
-    "name": "Sam's Bedroom - Nightstand Upper Drawer",
-    "category": [
-      "Prologue"
-    ],
-    "requires": "",
-    "region": "Sam's Bedroom"
-  },
-  {
-    "name": "Sam's Bedroom - Nightstand Lower Drawer",
-    "category": [
-      "Prologue"
-    ],
-    "requires": "",
-    "region": "Sam's Bedroom"
-  },
-  {
-    "name": "Darkness's Bedroom - Open The Cupboard",
-    "category": [
-      "Darkness's Bedroom"
-    ],
-    "requires": "",
-    "region": "Darkness's House - Darkness's Bedroom"
-  },
-  {
-    "name": "Darkness's Bedroom - Search The Key Pile",
-    "category": [
-      "Darkness's Bedroom"
-    ],
-    "requires": "",
-    "region": "Darkness's House - Darkness's Bedroom"
-  },
-  {
-    "name": "Darkness's Bedroom - Lone Key In The Cupboard",
-    "category": [
-      "Darkness's Bedroom"
-    ],
-    "requires": "",
-    "region": "Darkness's House - Darkness's Bedroom",
-    "place_item": [
-      "Correct Closet Padlock Key"
-    ]
-  },
-  {
-    "name": "Darkness's Bedroom - 'Capture' Darkness!",
-    "victory": true,
-    "category": [
-      "FINISH IT!"
-    ],
-    "requires": "|Illuminator Mark V Jr. Flashlight| AND |Portable Bad Guy Containment Unit| AND |Pajama Man Mask| AND |Correct Closet Padlock Key| AND |Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weight About A Pound!)| AND |Leader of the Salad Liberation Front| AND |Magnet| AND |Hammer (It Works Great!)| AND |Nail| AND |Doorknob| AND |Correct Cog| AND |Bert, Construction Crew Pencil| AND |Hollow Log| AND |Oars|",
-    "region": "Darkness's House - Darkness's Bedroom"
-  },
-  {
-    "name": "Sam's Bedroom - Open The Closet",
-    "region": "Sam's Bedroom",
-    "category": [
-      "Prologue"
-    ],
-    "requires": "|Flashlight| AND |Signature Edition All-Metal Pajama Man Lunchbox| AND |Toy Mask|"
-  },
-  {
-    "name": "Free From Rope Trap",
-    "region": "Land of Darkness - Friendly Tree",
-    "category": [
-      "Land of Darkness"
-    ],
-    "requires": "",
-    "place_item": [
-      "Rope"
-    ]
-  },
-  {
-    "name": "Lasso Wooden Board",
-    "region": "Land of Darkness - Bridge",
-    "category": [
-      "Land of Darkness"
-    ],
-    "requires": "|Rope|",
-    "place_item": [
-      "Wooden Board"
-    ]
-  },
-  {
-    "name": "Debunk Otto",
-    "region": "Land of Darkness - Boat Dock",
-    "category": [
-      "Land of Darkness"
-    ],
-    "requires": "|Rope| AND |Wooden Board|"
-  },
-  {
-    "name": "Oil-Up King",
-    "region": "Mines - Entrance",
-    "category": [
-      "Mines"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Pick Up Pickaxe",
-    "region": "Mines - One-Way Door Room",
-    "category": [
-      "Mines"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Mine Some Gold",
-    "region": "Mines - Vein of Gold",
-    "category": [
-      "Mines"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Pickaxe|"
-  },
-  {
-    "name": "Pay The Toll Bridge",
-    "region": "River - Stone Toll Bridge",
-    "category": [
-      "River"
-    ],
-    "requires": "|Oil Can (With Some Oil In It!)| AND |Pickaxe| AND |Gold Nugget (Must Weight About A Pound!)| AND |Rope|"
-  },
-  {
-    "name": "Toss Rox In Pulley Lift",
-    "region": "Land of Darkness - Outside Darkness's House",
-    "category": [
-      "Land of Darkness"
-    ],
-    "requires": ""
-  },
-  {
-    "name": "Brain Tickler! - First Category Correct",
-    "region": "Darkness's House - Doors of Knowledge",
-    "category": [
-      "Darkness's House"
-    ],
-    "requires": ""
-  },
-  {
-    "name": "Brain Tickler! - Second Category Correct",
-    "region": "Darkness's House - Doors of Knowledge",
-    "category": [
-      "Darkness's House"
-    ],
-    "requires": ""
-  },
-  {
-    "name": "Brain Tickler! - Third Category Correct",
-    "region": "Darkness's House - Doors of Knowledge",
-    "category": [
-      "Darkness's House"
-    ],
-    "requires": ""
-  },
-  {
-    "name": "Brain Tickler! - Fourth Category Correct",
-    "region": "Darkness's House - Doors of Knowledge",
-    "category": [
-      "Darkness's House"
-    ],
-    "requires": "|Hollow Log| AND |Oil Can (With Some Oil In It!)| AND |Rope| AND  |Wooden Board|"
-  },
-  {
-    "name": "Solve Secret Bookcase Door",
-    "region": "Darkness's House - Darkness's Study",
-    "category": [
-      "Darkness's House"
-    ],
-    "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board|"
-  },
-  {
-    "name": "Open One-Way Door",
-    "region": "Darkness's House - Stairs To Lab and One-Way Door",
-    "category": [
-      "Darkness's House"
-    ],
-    "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board|"
-  },
-  {
-    "name": "Read Darkness's Mail",
-    "region": "Land of Darkness - Outside Darkness's House",
-    "category": [
-      "Land of Darkness"
-    ],
-    "requires": ""
-  },
-  {
-    "name": "Ruin The Vibe In The 'Living' Room",
-    "region": "Darkness's House - 'Living' Room",
-    "category": [
-      "Darkness's House"
-    ],
-    "requires": ""
-  },
-  {
-    "name": "Drop Dumbwaiter",
-    "region": "Darkness's House - Kitchen",
-    "category": [
-      "Darkness's House"
-    ],
-    "requires": ""
-  },
-  {
-    "name": "Ride Dumbwaiter Up",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Darkness's House"
-    ],
-    "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board|"
-  },
-  {
-    "name": "Get Stamped By Toll Bridge",
-    "region": "River - Stone Toll Bridge",
-    "category": [
-      "River"
-    ],
-    "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weight About A Pound!)|"
-  },
-  {
-    "name": "Oil-Up Shack Door Hinges",
-    "region": "River - Abandoned Shack",
-    "category": [
-      "River"
-    ],
-    "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board|"
-  },
-  {
-    "name": "Obtain Oil Can",
-    "region": "River - Abandoned Shack",
-    "category": [
-      "River"
-    ],
-    "requires": "|Rope| AND |Wooden Board|",
-    "place_item": [
-      "Oil Can (With Some Oil In It!)"
-    ]
-  },
-  {
-    "name": "Get Stuck In Hollow Tree Log",
-    "region": "Path To Well (Log)",
-    "category": [
-      "Land of Darkness"
-    ],
-    "requires": "|Hollow Log| AND |Rope| AND |Wooden Board|"
-  },
-  {
-    "name": "Toss 1 Penny In Wishing Well",
-    "region": "Wishing Well",
-    "category": [
-      "Garden"
-    ],
-    "requires": "|Hollow Log| AND |Rope| AND |Wooden Board| AND |Oil Can (With Some Oil In It!)| AND |Oars|"
-  },
-  {
-    "name": "Toss 5 Pennies In Wishing Well",
-    "region": "Wishing Well",
-    "category": [
-      "Garden"
-    ],
-    "requires": "|Hollow Log| AND |Rope| AND |Wooden Board| AND |Oil Can (With Some Oil In It!)| AND |Oars|"
-  },
-  {
-    "category": [
-      "Park"
-    ],
-    "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weight About A Pound!)|",
-    "region": "Cheese & Crackers Park",
-    "name": "Play A Game of Cheese & Crackers! (3x3)"
-  },
-  {
-    "name": "Play A Game of Cheese & Crackers! (5x5)",
-    "region": "Cheese & Crackers Park",
-    "category": [
-      "Park"
-    ],
-    "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weight About A Pound!)|"
-  },
-  {
-    "name": "Play A Game of Cheese & Crackers! (7x7)",
-    "region": "Cheese & Crackers Park",
-    "category": [
-      "Park"
-    ],
-    "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weight About A Pound!)|"
-  },
-  {
-    "name": "Check The Time",
-    "region": "Darkness's House - 'Living' Room",
-    "category": [
-      "Darkness's House"
-    ],
-    "requires": ""
-  },
-  {
-    "name": "Create Weather Control Potion",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "region": "Darkness's House - Darkness's Laboratory",
-    "name": "Create Disguise Potion",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "region": "Darkness's House - Darkness's Laboratory",
-    "name": "Create Voice of Power Potion",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Create Marshmellow Potion",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Create Invisibility Potion",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Hammer (It Works Great!)| AND |Nail| AND |Magnet|"
-  },
-  {
-    "name": "Create Mouse Call Potion",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Create Superbrain Potion",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Create Fireball Potion",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Create Music Potion",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Create Fish From The Air Potion",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Create Hair Growth Potion",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Create Ultra-Hearing Potion",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Create Wisdom Potion",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Create Anti-Gravity Potion",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Create Fame Potion",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Create Wealth Potion",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Swing From Chandelier",
-    "region": "Darkness's House - Music Room",
-    "category": [
-      "Darkness's House"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Sam's Pockets",
-    "region": "Sam's Bedroom",
-    "category": [
-      "Starter Freebies!"
-    ],
-    "requires": "",
-    "place_item_category": [
-      "Start With These"
-    ]
-  },
-  {
-    "name": "Sam's Inventory",
-    "region": "Sam's Bedroom",
-    "category": [
-      "Starter Freebies!"
-    ],
-    "requires": "",
-    "place_item_category": [
-      "Start With These"
-    ]
-  },
-  {
-    "name": "Sam's Pajamaspace",
-    "region": "Sam's Bedroom",
-    "category": [
-      "Starter Freebies!"
-    ],
-    "requires": "",
-    "place_item_category": [
-      "Start With These"
-    ]
-  },
-  {
-    "name": "Apologize To Friendly Tree",
-    "region": "Land of Darkness - Friendly Tree",
-    "category": [
-      "Land of Darkness"
-    ],
-    "requires": "|Rope| AND |Wooden Board|"
-  },
-  {
-    "name": "Check Locked Closet Door",
-    "region": "Darkness's House - Darkness's Bedroom",
-    "category": [
-      "Darkness's Bedroom"
-    ],
-    "requires": ""
-  },
-  {
-    "name": "Toss 10 Pennies In Wishing Well",
-    "region": "Wishing Well",
-    "category": [
-      "Garden"
-    ],
-    "requires": "|Hollow Log| AND |Rope| AND |Wooden Board| AND |Oil Can (With Some Oil In It!)| AND |Oars|"
-  },
-  {
-    "name": "Raise Dumbwaiter",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Darkness's House"
-    ],
-    "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board| AND |Hollow Log|"
-  },
-  {
-    "name": "Find Your Flashlight",
-    "category": [
-      "Click When Item Located"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weight About A Pound!)| AND |Hammer (It Works Great!)| AND |Doorknob| AND |Bert, Construction Crew Pencil| AND |Hollow Log|"
-  },
-  {
-    "name": "Locate Your Lunchbox",
-    "category": [
-      "Click When Item Located"
-    ],
-    "requires": "|Rope| AND |Wooden Board| AND |Hollow Log|"
-  },
-  {
-    "name": "Meet Up With Your Mask",
-    "category": [
-      "Click When Item Located"
-    ],
-    "requires": "|Rope| AND |Wooden Board| AND |Hollow Log|"
-  },
-  {
-    "name": "Forage For Your Flashlight",
-    "category": [
-      "Click When Item Regained"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weight About A Pound!)| AND |Hammer (It Works Great!)| AND |Doorknob| AND |Bert, Construction Crew Pencil| AND |Hollow Log| AND |Correct Cog| "
-  },
-  {
-    "name": "Latch Onto Your Lunchbox",
-    "category": [
-      "Click When Item Regained"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Magnet| AND |Hollow Log| AND |Oars|"
-  },
-  {
-    "name": "Muster Up Your Mask",
-    "category": [
-      "Click When Item Regained"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Leader of the Salad Liberation Front| AND |Magnet| AND |Hammer (It Works Great!)| AND |Doorknob| AND |Nail| AND |Hollow Log|"
-  },
-  {
-    "name": "Create Incorrect Potion",
-    "region": "Darkness's House - Darkness's Laboratory",
-    "category": [
-      "Potions"
-    ],
-    "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
-  },
-  {
-    "name": "Complete Nuggets Level 1",
-    "region": "Mines - Remote Mining Terminal",
-    "category": [
-      "Mines"
-    ],
-    "requires": "|Rope| AND |Wooden Board| AND |Oil Can (With Some Oil In It!)|"
-  },
-  {
-    "name": "Complete Nuggets Level 2",
-    "region": "Mines - Remote Mining Terminal",
-    "category": [
-      "Mines"
-    ],
-    "requires": "|Rope| AND |Wooden Board| AND |Oil Can (With Some Oil In It!)|"
-  },
-  {
-    "name": "Complete Nuggets Level 3",
-    "region": "Mines - Remote Mining Terminal",
-    "category": [
-      "Mines"
-    ],
-    "requires": "|Rope| AND |Wooden Board| AND |Oil Can (With Some Oil In It!)|"
-  },
-  {
-    "name": "Complete Nuggets Level 4",
-    "region": "Mines - Remote Mining Terminal",
-    "category": [
-      "Mines"
-    ],
-    "requires": "|Rope| AND |Wooden Board| AND |Oil Can (With Some Oil In It!)|"
-  },
-  {
-    "name": "Complete Nuggets Level 5",
-    "region": "Mines - Remote Mining Terminal",
-    "category": [
-      "Mines"
-    ],
-    "requires": "|Rope| AND |Wooden Board| AND |Oil Can (With Some Oil In It!)|"
-  }
-]
+{
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.locations.schema.json",
+  "data": [
+    {
+      "name": "Sam's Bedroom - Scarf On Coatrack",
+      "category": [
+        "Prologue"
+      ],
+      "requires": "",
+      "region": "Sam's Bedroom"
+    },
+    {
+      "name": "Sam's Bedroom - Trash Can",
+      "category": [
+        "Prologue"
+      ],
+      "requires": "",
+      "region": "Sam's Bedroom"
+    },
+    {
+      "name": "Sam's Bedroom - Under Bed",
+      "category": [
+        "Prologue"
+      ],
+      "requires": "",
+      "region": "Sam's Bedroom"
+    },
+    {
+      "name": "Sam's Bedroom - Under Rug",
+      "category": [
+        "Prologue"
+      ],
+      "requires": "",
+      "region": "Sam's Bedroom"
+    },
+    {
+      "name": "Sam's Bedroom - Nightstand Upper Drawer",
+      "category": [
+        "Prologue"
+      ],
+      "requires": "",
+      "region": "Sam's Bedroom"
+    },
+    {
+      "name": "Sam's Bedroom - Nightstand Lower Drawer",
+      "category": [
+        "Prologue"
+      ],
+      "requires": "",
+      "region": "Sam's Bedroom"
+    },
+    {
+      "name": "Darkness's Bedroom - Open The Cupboard",
+      "category": [
+        "Darkness's Bedroom"
+      ],
+      "requires": "",
+      "region": "Darkness's House - Darkness's Bedroom"
+    },
+    {
+      "name": "Darkness's Bedroom - Search The Key Pile",
+      "category": [
+        "Darkness's Bedroom"
+      ],
+      "requires": "",
+      "region": "Darkness's House - Darkness's Bedroom"
+    },
+    {
+      "name": "Darkness's Bedroom - Lone Key In The Cupboard",
+      "category": [
+        "Darkness's Bedroom"
+      ],
+      "requires": "",
+      "region": "Darkness's House - Darkness's Bedroom",
+      "place_item": [
+        "Correct Closet Padlock Key"
+      ]
+    },
+    {
+      "name": "Darkness's Bedroom - 'Capture' Darkness!",
+      "victory": true,
+      "category": [
+        "FINISH IT!"
+      ],
+      "requires": "|Illuminator Mark V Jr.| AND |Portable Bad Guy Containment Unit| AND |Pajama Man Mask| AND |Correct Closet Padlock Key| AND |Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weigh About A Pound!)| AND |Leader of the Salad Liberation Front| AND |Magnet| AND |Hammer (It Works Great!)| AND |Nail| AND |Doorknob| AND |Correct Cog| AND |Bert, Construction Crew Pencil| AND |Hollow Log| AND |Oars|",
+      "region": "Darkness's House - Darkness's Bedroom"
+    },
+    {
+      "name": "Sam's Bedroom - Open The Closet",
+      "region": "Sam's Bedroom",
+      "category": [
+        "Prologue"
+      ],
+      "requires": "|Child's Flashlight| AND |Signature Edition All-Metal Pajama Man Lunchbox| AND |Toy Mask|"
+    },
+    {
+      "name": "Free From Rope Trap",
+      "region": "Land of Darkness - Friendly Tree",
+      "category": [
+        "Land of Darkness"
+      ],
+      "requires": "",
+      "place_item": [
+        "Rope"
+      ]
+    },
+    {
+      "name": "Lasso Wooden Board",
+      "region": "Land of Darkness - Bridge",
+      "category": [
+        "Land of Darkness"
+      ],
+      "requires": "|Rope|",
+      "place_item": [
+        "Wooden Board"
+      ]
+    },
+    {
+      "name": "Debunk Otto",
+      "region": "Land of Darkness - Boat Dock",
+      "category": [
+        "Land of Darkness"
+      ],
+      "requires": "|Rope| AND |Wooden Board|"
+    },
+    {
+      "name": "Oil-Up King",
+      "region": "Mines - Entrance",
+      "category": [
+        "Mines"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Pick Up Pickaxe",
+      "region": "Mines - One-Way Door Room",
+      "category": [
+        "Mines"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Mine Some Gold",
+      "region": "Mines - Vein of Gold",
+      "category": [
+        "Mines"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Pickaxe|"
+    },
+    {
+      "name": "Pay The Toll Bridge",
+      "region": "River - Stone Toll Bridge",
+      "category": [
+        "River"
+      ],
+      "requires": "|Oil Can (With Some Oil In It!)| AND |Pickaxe| AND |Gold Nugget (Must Weigh About A Pound!)| AND |Rope|"
+    },
+    {
+      "name": "Toss Rox In Pulley Lift",
+      "region": "Land of Darkness - Outside Darkness's House",
+      "category": [
+        "Land of Darkness"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Brain Tickler! - First Category Correct",
+      "region": "Darkness's House - Doors of Knowledge",
+      "category": [
+        "Darkness's House"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Brain Tickler! - Second Category Correct",
+      "region": "Darkness's House - Doors of Knowledge",
+      "category": [
+        "Darkness's House"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Brain Tickler! - Third Category Correct",
+      "region": "Darkness's House - Doors of Knowledge",
+      "category": [
+        "Darkness's House"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Brain Tickler! - Fourth Category Correct",
+      "region": "Darkness's House - Doors of Knowledge",
+      "category": [
+        "Darkness's House"
+      ],
+      "requires": "|Hollow Log| AND |Oil Can (With Some Oil In It!)| AND |Rope| AND  |Wooden Board|"
+    },
+    {
+      "name": "Solve Secret Bookcase Door",
+      "region": "Darkness's House - Darkness's Study",
+      "category": [
+        "Darkness's House"
+      ],
+      "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board|"
+    },
+    {
+      "name": "Open One-Way Door",
+      "region": "Darkness's House - Stairs To Lab and One-Way Door",
+      "category": [
+        "Darkness's House"
+      ],
+      "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board|"
+    },
+    {
+      "name": "Read Darkness's Mail",
+      "region": "Land of Darkness - Outside Darkness's House",
+      "category": [
+        "Land of Darkness"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Ruin The Vibe In The 'Living' Room",
+      "region": "Darkness's House - 'Living' Room",
+      "category": [
+        "Darkness's House"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Drop Dumbwaiter",
+      "region": "Darkness's House - Kitchen",
+      "category": [
+        "Darkness's House"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Ride Dumbwaiter Up",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Darkness's House"
+      ],
+      "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board|"
+    },
+    {
+      "name": "Get Stamped By Toll Bridge",
+      "region": "River - Stone Toll Bridge",
+      "category": [
+        "River"
+      ],
+      "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weigh About A Pound!)|"
+    },
+    {
+      "name": "Oil-Up Shack Door Hinges",
+      "region": "River - Abandoned Shack",
+      "category": [
+        "River"
+      ],
+      "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board|"
+    },
+    {
+      "name": "Obtain Oil Can",
+      "region": "River - Abandoned Shack",
+      "category": [
+        "River"
+      ],
+      "requires": "|Rope| AND |Wooden Board|",
+      "place_item": [
+        "Oil Can (With Some Oil In It!)"
+      ]
+    },
+    {
+      "name": "Get Stuck In Hollow Log",
+      "region": "Path To Well (Log)",
+      "category": [
+        "Land of Darkness"
+      ],
+      "requires": "|Hollow Log| AND |Rope| AND |Wooden Board|"
+    },
+    {
+      "name": "Toss 1 Penny In Wishing Well",
+      "region": "Wishing Well",
+      "category": [
+        "Garden"
+      ],
+      "requires": "|Hollow Log| AND |Rope| AND |Wooden Board| AND |Oil Can (With Some Oil In It!)| AND |Oars|"
+    },
+    {
+      "name": "Toss 5 Pennies In Wishing Well",
+      "region": "Wishing Well",
+      "category": [
+        "Garden"
+      ],
+      "requires": "|Hollow Log| AND |Rope| AND |Wooden Board| AND |Oil Can (With Some Oil In It!)| AND |Oars|"
+    },
+    {
+      "category": [
+        "Park"
+      ],
+      "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weigh About A Pound!)|",
+      "region": "Cheese & Crackers Park",
+      "name": "Play A Game of Cheese & Crackers! (3x3)"
+    },
+    {
+      "name": "Play A Game of Cheese & Crackers! (5x5)",
+      "region": "Cheese & Crackers Park",
+      "category": [
+        "Park"
+      ],
+      "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weigh About A Pound!)|"
+    },
+    {
+      "name": "Play A Game of Cheese & Crackers! (7x7)",
+      "region": "Cheese & Crackers Park",
+      "category": [
+        "Park"
+      ],
+      "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weigh About A Pound!)|"
+    },
+    {
+      "name": "Check The Time",
+      "region": "Darkness's House - 'Living' Room",
+      "category": [
+        "Darkness's House"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Create Weather Control Potion",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "region": "Darkness's House - Darkness's Laboratory",
+      "name": "Create Disguise Potion",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "region": "Darkness's House - Darkness's Laboratory",
+      "name": "Create Voice of Power Potion",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Create Marshmellow Potion",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Create Invisibility Potion",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Hammer (It Works Great!)| AND |Nail| AND |Magnet|"
+    },
+    {
+      "name": "Create Mouse Call Potion",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Create Superbrain Potion",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Create Fireball Potion",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Create Music Potion",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Create Fish From The Air Potion",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Create Hair Growth Potion",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Create Ultra-Hearing Potion",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Create Wisdom Potion",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Create Anti-Gravity Potion",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Create Fame Potion",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Create Wealth Potion",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Swing From Chandelier",
+      "region": "Darkness's House - Music Room",
+      "category": [
+        "Darkness's House"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Sam's Pockets",
+      "region": "Sam's Bedroom",
+      "category": [
+        "Start With These!"
+      ],
+      "requires": "",
+      "place_item_category": [
+        "Starter Freebies!"
+      ]
+    },
+    {
+      "name": "Sam's Inventory",
+      "region": "Sam's Bedroom",
+      "category": [
+        "Start With These!"
+      ],
+      "requires": "",
+      "place_item_category": [
+        "Starter Freebies!"
+      ]
+    },
+    {
+      "name": "Sam's Pajamaspace",
+      "region": "Sam's Bedroom",
+      "category": [
+        "Start With These!"
+      ],
+      "requires": "",
+      "place_item_category": [
+        "Starter Freebies!"
+      ]
+    },
+    {
+      "name": "Apologize To Friendly Tree",
+      "region": "Land of Darkness - Friendly Tree",
+      "category": [
+        "Land of Darkness"
+      ],
+      "requires": "|Rope| AND |Wooden Board|"
+    },
+    {
+      "name": "Check Locked Closet Door",
+      "region": "Darkness's House - Darkness's Bedroom",
+      "category": [
+        "Darkness's Bedroom"
+      ],
+      "requires": ""
+    },
+    {
+      "name": "Toss 10 Pennies In Wishing Well",
+      "region": "Wishing Well",
+      "category": [
+        "Garden"
+      ],
+      "requires": "|Hollow Log| AND |Rope| AND |Wooden Board| AND |Oil Can (With Some Oil In It!)| AND |Oars|"
+    },
+    {
+      "name": "Raise Dumbwaiter",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Darkness's House"
+      ],
+      "requires": "|Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board| AND |Hollow Log|"
+    },
+    {
+      "name": "Find Your Flashlight",
+      "category": [
+        "Click When Item Located"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weigh About A Pound!)| AND |Hammer (It Works Great!)| AND |Doorknob| AND |Bert, Construction Crew Pencil| AND |Hollow Log|"
+    },
+    {
+      "name": "Locate Your Lunchbox",
+      "category": [
+        "Click When Item Located"
+      ],
+      "requires": "|Rope| AND |Wooden Board| AND |Hollow Log|"
+    },
+    {
+      "name": "Meet Up With Your Mask",
+      "category": [
+        "Click When Item Located"
+      ],
+      "requires": "|Rope| AND |Wooden Board| AND |Hollow Log|"
+    },
+    {
+      "name": "Forage For Your Flashlight",
+      "category": [
+        "Click When Item Regained"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weigh About A Pound!)| AND |Hammer (It Works Great!)| AND |Doorknob| AND |Bert, Construction Crew Pencil| AND |Hollow Log| AND |Correct Cog| "
+    },
+    {
+      "name": "Latch Onto Your Lunchbox",
+      "category": [
+        "Click When Item Regained"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Magnet| AND |Hollow Log| AND |Oars|"
+    },
+    {
+      "name": "Muster Up Your Mask",
+      "category": [
+        "Click When Item Regained"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Leader of the Salad Liberation Front| AND |Magnet| AND |Hammer (It Works Great!)| AND |Doorknob| AND |Nail| AND |Hollow Log|"
+    },
+    {
+      "name": "Create Incorrect Potion",
+      "region": "Darkness's House - Darkness's Laboratory",
+      "category": [
+        "Potions"
+      ],
+      "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
+    },
+    {
+      "name": "Complete Nuggets Level 1",
+      "region": "Mines - Remote Mining Terminal",
+      "category": [
+        "Mines"
+      ],
+      "requires": "|Rope| AND |Wooden Board| AND |Oil Can (With Some Oil In It!)|"
+    },
+    {
+      "name": "Complete Nuggets Level 2",
+      "region": "Mines - Remote Mining Terminal",
+      "category": [
+        "Mines"
+      ],
+      "requires": "|Rope| AND |Wooden Board| AND |Oil Can (With Some Oil In It!)|"
+    },
+    {
+      "name": "Complete Nuggets Level 3",
+      "region": "Mines - Remote Mining Terminal",
+      "category": [
+        "Mines"
+      ],
+      "requires": "|Rope| AND |Wooden Board| AND |Oil Can (With Some Oil In It!)|"
+    },
+    {
+      "name": "Complete Nuggets Level 4",
+      "region": "Mines - Remote Mining Terminal",
+      "category": [
+        "Mines"
+      ],
+      "requires": "|Rope| AND |Wooden Board| AND |Oil Can (With Some Oil In It!)|"
+    },
+    {
+      "name": "Complete Nuggets Level 5",
+      "region": "Mines - Remote Mining Terminal",
+      "category": [
+        "Mines"
+      ],
+      "requires": "|Rope| AND |Wooden Board| AND |Oil Can (With Some Oil In It!)|"
+    }
+  ]
+}

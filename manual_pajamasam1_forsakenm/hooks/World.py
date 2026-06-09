@@ -78,20 +78,63 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
 
 # The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
 def before_create_items_filler(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
-    # Use this hook to remove items from the item pool
-    itemNamesToRemove: list[str] = [] # List of item names
+    
+    # 1. Check what option the player selected in their YAML file
+    player_choice = get_option_value(multiworld, player, "starting_items_progression")
 
-    # Add your code here to calculate which items to remove.
-    #
-    # Because multiple copies of an item can exist, you need to add an item name
-    # to the list multiple times if you want to remove multiple copies of it.
+    # 2. Define the lists of literal names from your JSON files
+    start_items_names = [
+        "Child's Flashlight",
+        "Toy Mask",
+        "Signature Edition All-Metal Pajama Man Lunchbox"
+    ]
 
-    for itemName in itemNamesToRemove:
-        item = next(i for i in item_pool if i.name == itemName)
-        remove_specific_item(item_pool, item)
+    start_locations_names = [
+        "Sam's Bedroom - Scarf On Coatrack",
+        "Sam's Bedroom - Trash Can",
+        "Sam's Bedroom - Under Bed",
+        "Sam's Bedroom - Under Rug",
+        "Sam's Bedroom - Nightstand Upper Drawer",
+        "Sam's Bedroom - Nightstand Lower Drawer"
+    ]
+
+    # --- CHOICE 0: SAM'S BEDROOM (DEFAULT) ---
+    if player_choice == 0:
+        # Use Python's built-in random module to select 3 distinct locations out of our 6
+        chosen_locations = world.random.sample(start_locations_names, 3)
+
+        # Loop through our items and pair them with our chosen locations
+        for i in range(3):
+            item_name = start_items_names[i]
+            loc_name = chosen_locations[i]
+
+            # Find the actual location object in the multiworld and the item object in the pool
+            location = next(l for l in multiworld.get_unfilled_locations(player=player) if l.name == loc_name)
+            item_to_place = next(item for item in item_pool if item.name == item_name)
+
+            # Lock the item into that location and clear it from the main item pool
+            location.place_locked_item(item_to_place)
+            remove_specific_item(item_pool, item_to_place)
+
+    # --- CHOICE 1: EARLY MULTIWORLD ---
+    elif player_choice == 1:
+        # Find our 3 progression items inside the pool
+        for item_name in start_items_names:
+            for item in item_pool:
+                if item.name == item_name:
+                    # Add them to Archipelago's built-in early_items list for this specific player
+                    if player not in multiworld.early_items:
+                        multiworld.early_items[player] = []
+                    multiworld.early_items[player].append(item.name)
+
+    # --- CHOICE 2: COMPLETELY RANDOMIZED ---
+    # We don't write any code for choice 2. If it hits this, Python skips the blocks 
+    # above and lets Archipelago scatter them naturally across the whole world!
 
     return item_pool
 
+    # Some other useful hook options:
+    # ... (the rest of the file's original comments can sit right here!)
     # Some other useful hook options:
 
     ## Place an item at a specific location

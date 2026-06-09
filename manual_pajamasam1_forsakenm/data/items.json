@@ -1,266 +1,269 @@
-[
-  {
-    "count": 1,
-    "name": "Illuminator Mark V Jr. Flashlight",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Portable Bad Guy Containment Unit",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Pajama Man Mask",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Flashlight",
-    "category": [
-      "Start With These"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Signature Edition All-Metal Pajama Man Lunchbox",
-    "category": [
-      "Start With These"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Toy Mask",
-    "category": [
-      "Start With These"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Wooden Board",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Rope",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Oil Can (With Some Oil In It!)",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Gold Nugget (Must Weight About A Pound!)",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Pickaxe",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Magnet",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Nail",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Oars",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Correct Cog",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Hammer (It Works Great!)",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Doorknob",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Leader of the Salad Liberation Front",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Bert, Construction Crew Pencil",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": 1,
-    "name": "Hollow Log",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": "2",
-    "name": "Big Brother Mark's Sock",
-    "category": [
-      "Filler"
-    ],
-    "filler": true
-  },
-  {
-    "count": 1,
-    "name": "Correct Closet Padlock Key",
-    "category": [
-      "Progression"
-    ],
-    "progression": true
-  },
-  {
-    "count": "5",
-    "name": "Wrong Key",
-    "category": [
-      "Filler"
-    ],
-    "filler": true
-  },
-  {
-    "count": 1,
-    "name": "Gratuitous Educational Content",
-    "category": [
-      "Traps"
-    ],
-    "trap": true
-  },
-  {
-    "count": 1,
-    "name": "Check on Darkness's Prize",
-    "category": [
-      "Traps"
-    ],
-    "trap": true
-  },
-  {
-    "count": 1,
-    "name": "Make A Wish?",
-    "category": [
-      "Traps"
-    ],
-    "trap": true
-  },
-  {
-    "count": 1,
-    "name": "Havarti! Provolone! (3x3)",
-    "category": [
-      "Traps"
-    ],
-    "trap": true
-  },
-  {
-    "count": 1,
-    "name": "Havarti! Provolone! (5x5)",
-    "category": [
-      "Traps"
-    ],
-    "trap": true
-  },
-  {
-    "count": 1,
-    "name": "Havarti! Provolone! (7x7)",
-    "category": [
-      "Traps"
-    ],
-    "trap": true
-  },
-  {
-    "count": 1,
-    "name": "Open/Close One-Way Door",
-    "category": [
-      "Traps"
-    ],
-    "trap": true
-  },
-  {
-    "count": 1,
-    "name": "Chat Up The Friendly Tree",
-    "category": [
-      "Traps"
-    ],
-    "trap": true
-  },
-  {
-    "count": 1,
-    "name": "Go Make A Potion",
-    "category": [
-      "Traps"
-    ],
-    "trap": true
-  },
-  {
-    "count": 1,
-    "name": "Play 3 Mins of Nuggets",
-    "category": [
-      "Trap"
-    ],
-    "trap": true
-  }
-]
+{
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.items.schema.json",
+  "data": [
+    {
+      "count": 1,
+      "name": "Illuminator Mark V Jr.",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Portable Bad Guy Containment Unit",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Pajama Man Mask",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Child's Flashlight",
+      "category": [
+        "Starter Freebies!"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Signature Edition All-Metal Pajama Man Lunchbox",
+      "category": [
+        "Starter Freebies!"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Toy Mask",
+      "category": [
+        "Starter Freebies!"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Wooden Board",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Rope",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Oil Can (With Some Oil In It!)",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Gold Nugget (Must Weigh About A Pound!)",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Pickaxe",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Magnet",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Nail",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Oars",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Correct Cog",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Hammer (It Works Great!)",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Doorknob",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Leader of the Salad Liberation Front",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Bert, Construction Crew Pencil",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "Hollow Log",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": "2",
+      "name": "Big Brother Mark's Sock",
+      "category": [
+        "Filler"
+      ],
+      "filler": true
+    },
+    {
+      "count": 1,
+      "name": "Correct Closet Padlock Key",
+      "category": [
+        "Progression"
+      ],
+      "progression": true
+    },
+    {
+      "count": "5",
+      "name": "Wrong Key",
+      "category": [
+        "Filler"
+      ],
+      "filler": true
+    },
+    {
+      "count": 1,
+      "name": "Gratuitous Educational Content",
+      "category": [
+        "Traps"
+      ],
+      "trap": true
+    },
+    {
+      "count": 1,
+      "name": "Check on Darkness's Prize",
+      "category": [
+        "Traps"
+      ],
+      "trap": true
+    },
+    {
+      "count": 1,
+      "name": "Make A Wish?",
+      "category": [
+        "Traps"
+      ],
+      "trap": true
+    },
+    {
+      "count": 1,
+      "name": "Havarti! Provolone! (3x3)",
+      "category": [
+        "Traps"
+      ],
+      "trap": true
+    },
+    {
+      "count": 1,
+      "name": "Havarti! Provolone! (5x5)",
+      "category": [
+        "Traps"
+      ],
+      "trap": true
+    },
+    {
+      "count": 1,
+      "name": "Havarti! Provolone! (7x7)",
+      "category": [
+        "Traps"
+      ],
+      "trap": true
+    },
+    {
+      "count": 1,
+      "name": "Open/Close One-Way Door",
+      "category": [
+        "Traps"
+      ],
+      "trap": true
+    },
+    {
+      "count": 1,
+      "name": "Chat Up The Friendly Tree",
+      "category": [
+        "Traps"
+      ],
+      "trap": true
+    },
+    {
+      "count": 1,
+      "name": "Go Make A Potion",
+      "category": [
+        "Traps"
+      ],
+      "trap": true
+    },
+    {
+      "count": 1,
+      "name": "Play 3 Mins of Nuggets",
+      "category": [
+        "Trap"
+      ],
+      "trap": true
+    }
+  ]
+}

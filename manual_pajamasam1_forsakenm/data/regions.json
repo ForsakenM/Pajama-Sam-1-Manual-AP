@@ -1,4 +1,5 @@
 {
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.regions.schema.json",
   "Sam's Bedroom": {
     "connects_to": [
       "Land of Darkness - Sam St"
@@ -10,7 +11,7 @@
     "connects_to": [
       "Land of Darkness - Bridge"
     ],
-    "requires": "|Flashlight| AND |Signature Edition All-Metal Pajama Man Lunchbox| AND |Toy Mask|"
+    "requires": "|Child's Flashlight| AND |Signature Edition All-Metal Pajama Man Lunchbox| AND |Toy Mask|"
   },
   "Land of Darkness - Bridge": {
     "connects_to": [
@@ -185,7 +186,7 @@
   },
   "Cheese & Crackers Park": {
     "connects_to": [],
-    "requires": "|Oil Can (With Some Oil In It!)| AND |Pickaxe| AND |Gold Nugget (Must Weight About A Pound!)| AND |Rope| AND |Wooden Board|"
+    "requires": "|Oil Can (With Some Oil In It!)| AND |Pickaxe| AND |Gold Nugget (Must Weigh About A Pound!)| AND |Rope| AND |Wooden Board|"
   },
   "River - Abandoned Shack": {
     "connects_to": [
@@ -248,6 +249,6 @@
   },
   "Darkness's House - Darkness's Bedroom": {
     "connects_to": [],
-    "requires": "|Illuminator Mark V Jr. Flashlight| AND |Portable Bad Guy Containment Unit| AND |Pajama Man Mask| AND |Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weight About A Pound!)| AND |Leader of the Salad Liberation Front| AND |Magnet| AND |Hammer (It Works Great!)| AND |Nail| AND |Doorknob| AND |Correct Cog| AND |Bert, Construction Crew Pencil| AND |Hollow Log| AND |Oars|"
+    "requires": "|Illuminator Mark V Jr.| AND |Portable Bad Guy Containment Unit| AND |Pajama Man Mask| AND |Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weigh About A Pound!)| AND |Leader of the Salad Liberation Front| AND |Magnet| AND |Hammer (It Works Great!)| AND |Nail| AND |Doorknob| AND |Correct Cog| AND |Bert, Construction Crew Pencil| AND |Hollow Log| AND |Oars|"
   }
 }
