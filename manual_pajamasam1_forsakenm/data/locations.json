@@ -463,39 +463,6 @@
       "requires": "|Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board|"
     },
     {
-      "name": "Sam's Pockets",
-      "region": "Sam's Bedroom",
-      "category": [
-        "Start With These!"
-      ],
-      "requires": "",
-      "place_item_category": [
-        "Starter Freebies!"
-      ]
-    },
-    {
-      "name": "Sam's Inventory",
-      "region": "Sam's Bedroom",
-      "category": [
-        "Start With These!"
-      ],
-      "requires": "",
-      "place_item_category": [
-        "Starter Freebies!"
-      ]
-    },
-    {
-      "name": "Sam's Pajamaspace",
-      "region": "Sam's Bedroom",
-      "category": [
-        "Start With These!"
-      ],
-      "requires": "",
-      "place_item_category": [
-        "Starter Freebies!"
-      ]
-    },
-    {
       "name": "Apologize To Friendly Tree",
       "region": "Land of Darkness - Friendly Tree",
       "category": [
