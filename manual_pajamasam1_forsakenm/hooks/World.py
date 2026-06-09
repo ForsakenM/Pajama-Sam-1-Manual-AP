@@ -118,14 +118,13 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
 
     # --- CHOICE 1: EARLY MULTIWORLD ---
     elif player_choice == 1:
-        # Find our 3 progression items inside the pool
+        # If this player doesn't have an early_items dictionary set up yet, initialize it
+        if player not in multiworld.early_items:
+            multiworld.early_items[player] = {}
+            
+        # Add our 3 progression items to the dictionary with a count of 1
         for item_name in start_items_names:
-            for item in item_pool:
-                if item.name == item_name:
-                    # Add them to Archipelago's built-in early_items list for this specific player
-                    if player not in multiworld.early_items:
-                        multiworld.early_items[player] = []
-                    multiworld.early_items[player].append(item.name)
+            multiworld.early_items[player][item_name] = 1
 
     # --- CHOICE 2: COMPLETELY RANDOMIZED ---
     # We don't write any code for choice 2. If it hits this, Python skips the blocks 
