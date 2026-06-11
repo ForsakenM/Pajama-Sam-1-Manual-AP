@@ -78,13 +78,11 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
 
 # The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
 def before_create_items_filler(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
-
-# ADD THIS LINE TO DEFINE WORLD_HANDLER FOR THE RECENTLY ADDED PHASES:
-    world_handler = world
     
-    # =============================================================================
-    # 1. STRING DEFINITIONS & OPTION RETRIEVAL
-    # =============================================================================
+    # 1. Check what option the player selected in their YAML file
+    player_choice = get_option_value(multiworld, player, "starting_items_progression")
+
+    # 2. Define the lists of literal names from your JSON files
     start_items_names = [
         "Child's Flashlight",
         "Toy Mask",
@@ -100,114 +98,37 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
         "Sam's Bedroom - Nightstand Lower Drawer"
     ]
 
-    river_items_names = ["Rope", "Wooden Board"]
-    mine_item_name    = "Oil Can (With Some Oil In It!)"
-    trivia_item_name  = "Hollow Log"
-    victory_item_name = "Correct Closet Key"
-
-    loc_rope        = "Escape From Rope Trap"
-    loc_board       = "Lasso Wooden Board"
-    loc_oil_can     = "Obtain Oil Can"
-    loc_hollow_log  = "Get Stuck In Hollow Log"
-    loc_victory_key = "Darkness's Bedroom - Lone Key In The Cupboard"
-
-    # Read option choices from the YAML file
-    start_choice   = get_option_value(multiworld, player, "starting_items_progression")
-    river_choice   = get_option_value(multiworld, player, "river_access_shuffle")
-    mine_choice    = get_option_value(multiworld, player, "mine_access_shuffle")
-    doors_choice   = get_option_value(multiworld, player, "doors_of_knowledge_shuffle")
-    victory_choice = get_option_value(multiworld, player, "closet_key_shuffle")
-
-    # =============================================================================
-    # PHASE 1: BEDROOM SHUFFLE PROCESSING
-    # =============================================================================
-    if start_choice == 0:  # SAM'S BEDROOM (DEFAULT)
+    # --- CHOICE 0: SAM'S BEDROOM (DEFAULT) ---
+    if player_choice == 0:
+        # Use Python's built-in random module to select 3 distinct locations out of our 6
         chosen_locations = world.random.sample(start_locations_names, 3)
+
+        # Loop through our items and pair them with our chosen locations
         for i in range(3):
             item_name = start_items_names[i]
             loc_name = chosen_locations[i]
 
+            # Find the actual location object in the multiworld and the item object in the pool
             location = next(l for l in multiworld.get_unfilled_locations(player=player) if l.name == loc_name)
             item_to_place = next(item for item in item_pool if item.name == item_name)
 
+            # Lock the item into that location and clear it from the main item pool
             location.place_locked_item(item_to_place)
             remove_specific_item(item_pool, item_to_place)
 
-    elif start_choice == 1:  # EARLY MULTIWORLD
+    # --- CHOICE 1: EARLY MULTIWORLD ---
+    elif player_choice == 1:
+        # If this player doesn't have an early_items dictionary set up yet, initialize it
         if player not in multiworld.early_items:
             multiworld.early_items[player] = {}
+            
+        # Add our 3 progression items to the dictionary with a count of 1
         for item_name in start_items_names:
             multiworld.early_items[player][item_name] = 1
 
-    # =============================================================================
-    # PHASE 2: RIVER ACCESS SHUFFLE PROCESSING (ROPE & BOARD)
-    # =============================================================================
-    if river_choice == 0:  # Vanilla
-        if player not in world_handler.location_priorities:
-            world_handler.location_priorities[player] = {}
-        world_handler.location_priorities[player][loc_rope] = "Rope"
-        world_handler.location_priorities[player][loc_board] = "Wooden Board"
-        
-    elif river_choice == 1:  # Early Local
-        if player not in world_handler.local_early_items:
-            world_handler.local_early_items[player] = []
-        for item_name in river_items_names:
-            world_handler.local_early_items[player].append(item_name)
-            
-    elif river_choice == 2:  # Early Multiworld
-        if player not in multiworld.early_items:
-            multiworld.early_items[player] = {}
-        for item_name in river_items_names:
-            multiworld.early_items[player][item_name] = 1
-
-    # =============================================================================
-    # PHASE 3: MINE ACCESS SHUFFLE PROCESSING (OIL CAN)
-    # =============================================================================
-    if mine_choice == 0:  # Vanilla
-        if player not in world_handler.location_priorities:
-            world_handler.location_priorities[player] = {}
-        world_handler.location_priorities[player][loc_oil_can] = mine_item_name
-        
-    elif mine_choice == 1:  # Early Local
-        if player not in world_handler.local_early_items:
-            world_handler.local_early_items[player] = []
-        world_handler.local_early_items[player].append(mine_item_name)
-        
-    elif mine_choice == 2:  # Early Multiworld
-        if player not in multiworld.early_items:
-            multiworld.early_items[player] = {}
-        multiworld.early_items[player][mine_item_name] = 1
-
-    # =============================================================================
-    # PHASE 4: DOORS OF KNOWLEDGE SHUFFLE PROCESSING (HOLLOW LOG)
-    # =============================================================================
-    if doors_choice == 0:  # Vanilla
-        if player not in world_handler.location_priorities:
-            world_handler.location_priorities[player] = {}
-        world_handler.location_priorities[player][loc_hollow_log] = trivia_item_name
-        
-    elif doors_choice == 1:  # Early Local
-        if player not in world_handler.local_early_items:
-            world_handler.local_early_items[player] = []
-        world_handler.local_early_items[player].append(trivia_item_name)
-        
-    elif doors_choice == 2:  # Early Multiworld
-        if player not in multiworld.early_items:
-            multiworld.early_items[player] = {}
-        multiworld.early_items[player][trivia_item_name] = 1
-
-    # =============================================================================
-    # PHASE 5: CLOSET KEY SHUFFLE PROCESSING (VICTORY KEY)
-    # =============================================================================
-    if victory_choice == 0:  # Vanilla
-        if player not in world_handler.location_priorities:
-            world_handler.location_priorities[player] = {}
-        world_handler.location_priorities[player][loc_victory_key] = victory_item_name
-        
-    elif victory_choice == 1:  # Local Shuffled (Not forced early)
-        if player not in world_handler.non_early_items:
-            world_handler.non_early_items[player] = []
-        world_handler.non_early_items[player].append(victory_item_name)
+    # --- CHOICE 2: COMPLETELY RANDOMIZED ---
+    # We don't write any code for choice 2. If it hits this, Python skips the blocks 
+    # above and lets Archipelago scatter them naturally across the whole world!
 
     return item_pool
 
