@@ -73,7 +73,7 @@
       "requires": "",
       "region": "Darkness's House - Darkness's Bedroom",
       "place_item": [
-        "Correct Closet Padlock Key"
+        "Correct Closet Key"
       ]
     },
     {
@@ -82,7 +82,7 @@
       "category": [
         "FINISH IT!"
       ],
-      "requires": "|Illuminator Mark V Jr.| AND |Portable Bad Guy Containment Unit| AND |Pajama Man Mask| AND |Correct Closet Padlock Key| AND |Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weigh About A Pound!)| AND |Leader of the Salad Liberation Front| AND |Magnet| AND |Hammer (It Works Great!)| AND |Nail| AND |Doorknob| AND |Correct Cog| AND |Bert, Construction Crew Pencil| AND |Hollow Log| AND |Oars|",
+      "requires": "|Illuminator Mark V Jr.| AND |Portable Bad Guy Containment Unit| AND |Pajama Man Mask| AND |Correct Closet Key| AND |Rope| AND |Oil Can (With Some Oil In It!)| AND |Wooden Board| AND |Pickaxe| AND |Gold Nugget (Must Weigh About A Pound!)| AND |Leader of the Salad Liberation Front| AND |Magnet| AND |Hammer (It Works Great!)| AND |Nail| AND |Doorknob| AND |Correct Cog| AND |Bert, Construction Crew Pencil| AND |Hollow Log| AND |Oars|",
       "region": "Darkness's House - Darkness's Bedroom"
     },
     {
@@ -94,7 +94,7 @@
       "requires": "|Child's Flashlight| AND |Signature Edition All-Metal Pajama Man Lunchbox| AND |Toy Mask|"
     },
     {
-      "name": "Free From Rope Trap",
+      "name": "Escape From Rope Trap",
       "region": "Land of Darkness - Friendly Tree",
       "category": [
         "Land of Darkness"
@@ -276,7 +276,10 @@
       "category": [
         "Land of Darkness"
       ],
-      "requires": "|Hollow Log| AND |Rope| AND |Wooden Board|"
+      "requires": "|Rope| AND |Wooden Board|",
+      "place_item": [
+	"Hollow Log"
+      ]
     },
     {
       "name": "Toss 1 Penny In Wishing Well",

@@ -127,19 +127,19 @@
   },
   "Darkness's House - Doors of Knowledge": {
     "connects_to": [
-      "Darkness's House - Hallway of Doors (Music Room Door)",
+      "Darkness's House - Music Room Hallway",
       "Darkness's House - Outside Darkness's Room"
     ],
     "requires": ""
   },
-  "Darkness's House - Hallway of Doors (Music Room Door)": {
+  "Darkness's House - Music Room Hallway": {
     "connects_to": [
-      "Darkness's House - Hallway of Doors (Grandfather Clock)",
+      "Darkness's House - Grandfather Clock Hallway",
       "Darkness's House - Music Room"
     ],
     "requires": "|Hollow Log| AND |Oil Can (With Some Oil In It!)| AND |Rope| AND |Wooden Board|"
   },
-  "Darkness's House - Hallway of Doors (Grandfather Clock)": {
+  "Darkness's House - Grandfather Clock Hallway": {
     "connects_to": [
       "Darkness's House - Darkness's Study"
     ],
