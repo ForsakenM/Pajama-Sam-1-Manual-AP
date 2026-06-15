@@ -79,6 +79,8 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
 # The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
 def before_create_items_filler(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
 
+# ADD THIS LINE TO DEFINE WORLD_HANDLER FOR THE RECENTLY ADDED PHASES:
+    world_handler = world
     
     # =============================================================================
     # 1. STRING DEFINITIONS & OPTION RETRIEVAL
@@ -100,7 +102,7 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
 
     river_items_names = ["Rope", "Wooden Board"]
     mine_item_name    = "Oil Can (With Some Oil In It!)"
-    doors_item_name  = "Hollow Log"
+    trivia_item_name  = "Hollow Log"
     victory_item_name = "Correct Closet Key"
 
     loc_rope        = "Escape From Rope Trap"
@@ -137,105 +139,75 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
         for item_name in start_items_names:
             multiworld.early_items[player][item_name] = 1
 
-    # ==============================================================================
+    # =============================================================================
     # PHASE 2: RIVER ACCESS SHUFFLE PROCESSING (ROPE & BOARD)
-    # ==============================================================================
+    # =============================================================================
     if river_choice == 0:  # Vanilla
-        vanilla_map = {loc_rope: "Rope", loc_board: "Wooden Board"}
-        for loc_name, item_name in vanilla_map.items():
-            location = next(l for l in multiworld.get_unfilled_locations(player=player) if l.name == loc_name)
-            item_to_place = next(i for i in item_pool if i.name == item_name)
-            location.place_locked_item(item_to_place)
-            remove_specific_item(item_pool, item_to_place)
-
+        if player not in world_handler.location_priorities:
+            world_handler.location_priorities[player] = {}
+        world_handler.location_priorities[player][loc_rope] = "Rope"
+        world_handler.location_priorities[player][loc_board] = "Wooden Board"
+        
     elif river_choice == 1:  # Early Local
-        if player not in multiworld.local_early_items:
-            multiworld.local_early_items[player] = []
+        if player not in world_handler.local_early_items:
+            world_handler.local_early_items[player] = []
         for item_name in river_items_names:
-            multiworld.local_early_items[player].append(item_name)
-
+            world_handler.local_early_items[player].append(item_name)
+            
     elif river_choice == 2:  # Early Multiworld
         if player not in multiworld.early_items:
             multiworld.early_items[player] = {}
         for item_name in river_items_names:
             multiworld.early_items[player][item_name] = 1
 
-    elif river_choice == 3:  # Completely Randomized
-        pass
-
     # =============================================================================
     # PHASE 3: MINE ACCESS SHUFFLE PROCESSING (OIL CAN)
     # =============================================================================
     if mine_choice == 0:  # Vanilla
-        vanilla_map = {loc_oil_can: "Oil Can (With Some Oil In It!)"}
-        for loc_name, item_name in vanilla_map.items():
-            location = next(l for l in multiworld.get_unfilled_locations(player=player) if l.name == loc_name)
-            item_to_place = next(i for i in item_pool if i.name == item_name)
-            location.place_locked_item(item_to_place)
-            remove_specific_item(item_pool, item_to_place)
-
+        if player not in world_handler.location_priorities:
+            world_handler.location_priorities[player] = {}
+        world_handler.location_priorities[player][loc_oil_can] = mine_item_name
+        
     elif mine_choice == 1:  # Early Local
-        if player not in multiworld.local_early_items:
-            multiworld.local_early_items[player] = []
-        for item_name in mine_items_names:
-            multiworld.local_early_items[player].append(mine_item_name)
-
+        if player not in world_handler.local_early_items:
+            world_handler.local_early_items[player] = []
+        world_handler.local_early_items[player].append(mine_item_name)
+        
     elif mine_choice == 2:  # Early Multiworld
         if player not in multiworld.early_items:
             multiworld.early_items[player] = {}
-        for item_name in mine_items_names:
-            multiworld.early_items[player][mine_item_name] = 1
+        multiworld.early_items[player][mine_item_name] = 1
 
-    elif mine_choice == 3:  # Completely Randomized
-        pass
-
-
-    # ==============================================================================
-    # PHASE 4: DOORS OF KNOWLEDGE SHUFFLE PROCESSING
-    # ==============================================================================
+    # =============================================================================
+    # PHASE 4: DOORS OF KNOWLEDGE SHUFFLE PROCESSING (HOLLOW LOG)
+    # =============================================================================
     if doors_choice == 0:  # Vanilla
-        vanilla_map = {loc_hollow_log: "Hollow Log"}
-        for loc_name, item_name in vanilla_map.items():
-            location = next(l for l in multiworld.get_unfilled_locations(player=player) if l.name == loc_name)
-            item_to_place = next(i for i in item_pool if i.name == item_name)
-            location.place_locked_item(item_to_place)
-            remove_specific_item(item_pool, item_to_place)
-
+        if player not in world_handler.location_priorities:
+            world_handler.location_priorities[player] = {}
+        world_handler.location_priorities[player][loc_hollow_log] = trivia_item_name
+        
     elif doors_choice == 1:  # Early Local
-        if player not in multiworld.local_early_items:
-            multiworld.local_early_items[player] = []
-        multiworld.local_early_items[player].append(doors_item_name)
-
+        if player not in world_handler.local_early_items:
+            world_handler.local_early_items[player] = []
+        world_handler.local_early_items[player].append(trivia_item_name)
+        
     elif doors_choice == 2:  # Early Multiworld
         if player not in multiworld.early_items:
             multiworld.early_items[player] = {}
-        multiworld.early_items[player][doors_item_name] = 1
-
-    elif doors_choice == 3:  # Completely Randomized
-        pass
+        multiworld.early_items[player][trivia_item_name] = 1
 
     # =============================================================================
     # PHASE 5: CLOSET KEY SHUFFLE PROCESSING (VICTORY KEY)
     # =============================================================================
     if victory_choice == 0:  # Vanilla
-        vanilla_map = {loc_victory_key: victory_item_name}
-
-        for loc_name, item_name in vanilla_map.items():
-            location = next(l for l in multiworld.get_unfilled_locations(player=player) if l.name == loc_name)
-            item_to_place = next(i for i in item_pool if i.name == item_name)
-            location.place_locked_item(item_to_place)
-            remove_specific_item(item_pool, item_to_place)
-
-    elif victory_choice == 1:  # Local
-        # We want to ensure this item stays in the Pajama Sam 1 world.
-        # By default, if you don't add it to multiworld.early_items, 
-        # it remains in the item pool for your local world.
-        pass 
-
-    elif victory_choice == 2:  # Multiworld
-        # For full multiworld randomization, we ensure it's not locked 
-        # and let the base generator place it anywhere.
-        pass
+        if player not in world_handler.location_priorities:
+            world_handler.location_priorities[player] = {}
+        world_handler.location_priorities[player][loc_victory_key] = victory_item_name
+        
+    elif victory_choice == 1:  # Local Shuffled (Not forced early)
+        if player not in world_handler.non_early_items:
+            world_handler.non_early_items[player] = []
+        world_handler.non_early_items[player].append(victory_item_name)
 
     return item_pool
 
