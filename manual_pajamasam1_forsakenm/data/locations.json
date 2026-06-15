@@ -99,10 +99,7 @@
       "category": [
         "Land of Darkness"
       ],
-      "requires": "",
-      "place_item": [
-        "Rope"
-      ]
+      "requires": ""
     },
     {
       "name": "Lasso Wooden Board",
@@ -110,10 +107,7 @@
       "category": [
         "Land of Darkness"
       ],
-      "requires": "|Rope|",
-      "place_item": [
-        "Wooden Board"
-      ]
+      "requires": "|Rope|"
     },
     {
       "name": "Debunk Otto",
@@ -265,10 +259,7 @@
       "category": [
         "River"
       ],
-      "requires": "|Rope| AND |Wooden Board|",
-      "place_item": [
-        "Oil Can (With Some Oil In It!)"
-      ]
+      "requires": "|Rope| AND |Wooden Board|"
     },
     {
       "name": "Get Stuck In Hollow Log",
@@ -276,10 +267,7 @@
       "category": [
         "Land of Darkness"
       ],
-      "requires": "|Rope| AND |Wooden Board|",
-      "place_item": [
-	"Hollow Log"
-      ]
+      "requires": "|Rope| AND |Wooden Board|"
     },
     {
       "name": "Toss 1 Penny In Wishing Well",
