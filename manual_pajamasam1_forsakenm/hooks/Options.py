@@ -1,23 +1,18 @@
 # Object classes from AP that represent different types of options that you can create
-from Options import Option, FreeText, NumericOption, Toggle, DefaultOnToggle, Choice, TextChoice, Range, NamedRange, OptionGroup, PerGameCommonOptions
+from Options import Choice, Range, OptionGroup
+
 # These helper methods allow you to determine if an option has been set, or what its value is, for any player in the multiworld
 from ..Helpers import is_option_enabled, get_option_value
 from typing import Type, Any
 
-
-####################################################################
-# NOTE: At the time that options are created, Manual has no concept of the multiworld or its own world.
-#       Options are defined before the world is even created.
-#####################################################################
-
 class PJS1StartShuffle(Choice):
     """
     Determines where the first three progression items (Child's Flashlight, Toy Mask, Signature Edition All-Metal Pajama Man Lunchbox)
-    are placed during generation. These three items are required for the 'Sam's Bedroom - Open The Closet' location and to have access to the Land of Darkness.
+    are placed during generation.
     
     Sam's Bedroom: These items will be placed within the non-closet locations in Sam's Bedroom, preventing early BK chances. (Default)
     Early Multiworld: These items can be in any game in the multiworld, but are placed in early spheres to be acquired quickly.
-    Completely Randomized: Placed anywhere in the multiworld. WARNING: This could leave you stuck in the first area of the game for a considerable amount of time!
+    Completely Randomized: Placed anywhere in the multiworld.
     """
     display_name = "Sam's Bedroom Progression"
     option_sams_bedroom = 0
@@ -28,13 +23,11 @@ class PJS1StartShuffle(Choice):
 class PJS1RiverAccess(Choice):
     """
     Controls the placement of the Rope and the Wooden Board during generation. 
-    Both of these items are required to access the majority of the River section of the Land of Darkness
-    
     
     Vanilla: Rope and Board stay on their native event locations. (Default)
     Early Local: Placed in early spheres within your world.
     Early Multiworld: Can be anywhere in the multiworld, but placed in early spheres.
-    Completely Randomized: Placed anywhere in the multiworld. WARNING: Access to the majority of the game is locked behind access to the River region!
+    Completely Randomized: Placed anywhere in the multiworld.
     """
     display_name = "River Access Shuffle"
     option_vanilla = 0
@@ -46,12 +39,11 @@ class PJS1RiverAccess(Choice):
 class PJS1MineAccess(Choice):
     """
     Controls the placement of the Oil Can during generation.
-    Without this, you cannot oil King the Minecart or access any checks inside the Mines.
     
     Vanilla: Oil Can stays on its native event location. (Default)
     Early Local: Placed in early spheres within your world.
     Early Multiworld: Can be anywhere in the multiworld, but placed in early spheres.
-    Completely Randomized: Placed anywhere in the multiworld. WARNING: Access to a significant part of the game is locked behind having the Oil Can!
+    Completely Randomized: Placed anywhere in the multiworld.
     """
     display_name = "Mine Access Shuffle"
     option_vanilla = 0
@@ -62,13 +54,12 @@ class PJS1MineAccess(Choice):
 
 class PJS1DoorsOfKnowledge(Choice):
     """
-    Controls the placement of the Hollow Log during generation 
-    Together with the Oil Can, this is required to answer the 4th Trivia question and pass through the Doors of Knowledge into the rest of Darkness's House.
+    Controls the placement of the Hollow Log during generation.
     
     Vanilla: Hollow Log will be placed at 'Get Stuck In Hollow Log' location. (Default)
     Early Local: Placed in early spheres within your world.
     Early Multiworld: Can be anywhere in the multiworld, but placed in early spheres.
-    Completely Randomized: Placed anywhere in the multiworld. WARNING: Access to a large part of the game is locked behind the Doors of Knowledge!
+    Completely Randomized: Placed anywhere in the multiworld.
     """
     display_name = "Doors of Knowledge Shuffle"
     option_vanilla = 0
@@ -80,8 +71,6 @@ class PJS1DoorsOfKnowledge(Choice):
 class PJS1VictoryKey(Choice):
     """
     Controls the placement of the Correct Closet Key in Darkness's Bedroom. 
-    This is the key required to unlock the closet and win the game.
-    WARNING: You cannot leave Darkness's Bedroom once entered. If you choose a non-default option, be thorough and make sure to save before entering.
     
     Vanilla: Correct Closet Key stays in its native event location. (Default)
     Local: The key is shuffled, but guaranteed to be somewhere inside your world.
@@ -93,25 +82,89 @@ class PJS1VictoryKey(Choice):
     option_multiworld = 2
     default = 0
 
+class PJS1CheeseAndCrackers(Choice):
+    """
+    Controls the inclusion of the Cheese & Crackers (Tic-Tac-Toe) minigame locations.
+    
+    Disabled: No Cheese & Crackers locations are included in the pool.
+    Play Only: Only the 3 locations for playing a match (3x3, 5x5, 7x7) are included. (Default)
+    Play and Win: Includes both the 3 playing locations and 3 locations for winning the matches.
+    """
+    display_name = "Cheese & Crackers"
+    option_disabled = 0
+    option_play_only = 1
+    option_play_and_win = 2
+    default = 1
 
-# This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
-def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
-    # We inject your new option into the dictionary here!
+class PJS1NuggetsLevels(Range):
+    """
+    Controls the inclusion and magnitude of the Nuggets (Snake) minigame locations.
+    
+    0: Disabled. No Nuggets locations are included in the pool. (Default)
+    1-15: Partial Game. Includes only the specified number of levels as locations.
+    """
+    display_name = "Nuggets Levels"
+    range_start = 0
+    range_end = 15
+    default = 0
+
+class PJS1Potions(Choice):
+    """
+    Controls the inclusion of the Potion minigame locations.
+
+    Disabled: There will be no Potion locations included in the pool. (Default)
+    Enabled: All 17 Potion locations will be added to the pool.
+    """
+    display_name = "Potions"
+    option_disabled = 0
+    option_enabled = 1
+    default = 0
+
+
+# This is called before any manual options are defined
+def before_options_defined(options: dict[str, Type[Choice]]) -> dict[str, Type[Choice]]:
     options["starting_items_progression"] = PJS1StartShuffle
     options["river_access_shuffle"] = PJS1RiverAccess
     options["mine_access_shuffle"] = PJS1MineAccess
     options["doors_of_knowledge_shuffle"] = PJS1DoorsOfKnowledge
     options["closet_key_shuffle"] = PJS1VictoryKey
-
+    options["cheese_and_crackers_logic"] = PJS1CheeseAndCrackers
+    options["nuggets_levels"] = PJS1NuggetsLevels
+    options["potions"] = PJS1Potions
     return options
 
-# This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options
-def after_options_defined(options: Type[PerGameCommonOptions]):
+def after_options_defined(options: Any):
     pass
 
-# Use this Hook if you want to add your Option to an Option group (existing or not)
-def before_option_groups_created(groups: dict[str, list[Type[Option[Any]]]]) -> dict[str, list[Type[Option[Any]]]]:
+# We hook into here to cleanly section out and name the option groups for the user interface!
+def before_option_groups_created(groups: dict[str, list[Type[Choice]]]) -> dict[str, list[Type[Choice]]]:
     return groups
 
 def after_option_groups_created(groups: list[OptionGroup]) -> list[OptionGroup]:
+    # We build the custom visual groups in the precise order you want them displayed.
+    # Note: progression_balancing and accessibility are automatically grouped at the top by the WebHost.
+    
+    item_shuffle_group = OptionGroup("Item Shuffle Options", [
+        "starting_items_progression",
+        "river_access_shuffle",
+        "mine_access_shuffle",
+        "doors_of_knowledge_shuffle",
+        "closet_key_shuffle"
+    ])
+    
+    minigames_group = OptionGroup("Minigame Options", [
+        "cheese_and_crackers_logic",
+        "nuggets_levels",
+        "potions"
+    ])
+    
+    traps_group = OptionGroup("Trap Options", [
+        "filler_traps"
+    ])
+    
+    # Clear out any default groupings and append ours in strict order
+    groups.append(item_shuffle_group)
+    groups.append(minigames_group)
+    groups.append(traps_group)
+    
     return groups
