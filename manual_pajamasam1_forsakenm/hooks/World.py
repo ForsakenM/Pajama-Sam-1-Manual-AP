@@ -50,16 +50,38 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
 
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
-    # Use this hook to remove locations from the world
-    locationNamesToRemove: list[str] = [] # List of location names
+    # This list will track exactly which locations to remove based on your YAML options.
+    locationNamesToRemove: list[str] = []
 
-    # Add your code here to calculate which locations to remove
+    # 1. Cheese & Crackers Logic: 0=Disabled, 1=Play Only (Default), 2=Play and Win[cite: 2]
+    cc_choice = get_option_value(multiworld, player, "cheese_and_crackers_logic")
+    cc_play_locs = ["Play A Game of Cheese & Crackers! (3x3)", "Play A Game of Cheese & Crackers! (5x5)", "Play A Game of Cheese & Crackers! (7x7)"]
+    cc_win_locs = ["Win A Game of Cheese & Crackers! (3x3)", "Win A Game of Cheese & Crackers! (5x5)", "Win A Game of Cheese & Crackers! (7x7)"]
+    
+    if cc_choice == 0: # Disabled: Remove all 6[cite: 2]
+        locationNamesToRemove.extend(cc_play_locs + cc_win_locs)
+    elif cc_choice == 1: # Play Only: Remove the 3 Win locations[cite: 2]
+        locationNamesToRemove.extend(cc_win_locs)
 
-    for region in multiworld.regions:
-        if region.player == player:
-            for location in list(region.locations):
-                if location.name in locationNamesToRemove:
-                    region.locations.remove(location)
+    # 2. Nuggets Logic: 0=Disabled, 1-15 adds those specific levels[cite: 2]
+    nuggets_count = get_option_value(multiworld, player, "nuggets_levels")
+    for i in range(1, 16):
+        if i > nuggets_count or nuggets_count == 0:
+            locationNamesToRemove.append(f"Complete Nuggets Level {i}")
+
+    # 3. Potions Logic: 0=Disabled (Default), 1=Enabled[cite: 2]
+    potions_choice = get_option_value(multiworld, player, "potions")
+    if potions_choice == 0: # Disabled
+        for region in multiworld.get_regions(player):
+            for location in region.locations:
+                if location.category and "Potions" in location.category:
+                    locationNamesToRemove.append(location.name)
+
+    # Final loop to remove identified locations from their regions, keeping core logic intact
+    for region in multiworld.get_regions(player):
+        for location in list(region.locations):
+            if location.name in locationNamesToRemove:
+                region.locations.remove(location)
 
 # This hook allows you to access the item names & counts before the items are created. Use this to increase/decrease the amount of a specific item in the pool
 # Valid item_config key/values:
@@ -285,9 +307,35 @@ def before_create_item(item_name: str, world: World, multiworld: MultiWorld, pla
 def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, player: int) -> ManualItem:
     return item
 
-# This method is run towards the end of pre-generation, before the place_item options have been handled and before AP generation occurs
-def before_generate_basic(world: World, multiworld: MultiWorld, player: int):
-    pass
+# This is called during the generate_basic phase, which is the perfect time to manually place or restrict items in a Manual apworld.
+def before_generate_basic(world: World, multiworld: MultiWorld, player: int) -> None:
+    victory_choice = get_option_value(multiworld, player, "closet_key_shuffle")
+    victory_item_name = "Correct Closet Key"
+
+    if victory_choice == 1:  # Local Shuffle Only
+        # 1. Find the key object inside the multiworld item pool
+        key_item = None
+        for item in multiworld.itempool:
+            if item.player == player and item.name == victory_item_name:
+                key_item = item
+                break
+
+        if key_item:
+            # 2. Get all currently empty locations that belong strictly to YOUR slot (player)
+            local_unfilled_locations = [
+                loc for loc in multiworld.get_unfilled_locations(player=player) 
+                if loc.player == player
+            ]
+
+            if local_unfilled_locations:
+                # 3. Use the multiworld's built-in randomizer to cleanly select one local spot
+                target_location = multiworld.random.choice(local_unfilled_locations)
+                
+                # 4. Pull the key out of the global pool so it can't be given to other players
+                multiworld.itempool.remove(key_item)
+                
+                # 5. Lock it into the chosen local Pajama Sam location
+                target_location.place_locked_item(key_item)
 
 # This method is run at the very end of pre-generation, once the place_item options have been handled and before AP generation occurs
 def after_generate_basic(world: World, multiworld: MultiWorld, player: int):

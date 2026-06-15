@@ -53,8 +53,7 @@
       "name": "Darkness's Bedroom - Lone Key In The Cupboard",
       "category": ["Darkness's Bedroom"],
       "requires": "",
-      "region": "Darkness's House - Darkness's Bedroom",
-      "place_item": ["Correct Closet Key"]
+      "region": "Darkness's House - Darkness's Bedroom"
     },
     {
       "name": "Darkness's Bedroom - 'Capture' Darkness!",
