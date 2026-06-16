@@ -141,8 +141,7 @@ def before_option_groups_created(groups: dict[str, list[Type[Choice]]]) -> dict[
     return groups
 
 def after_option_groups_created(groups: list[OptionGroup]) -> list[OptionGroup]:
-    # We build the custom visual groups using actual Class references instead of strings
-    
+    # 1. Define your custom Item Shuffle category using class references
     item_shuffle_group = OptionGroup("Item Shuffle Options", [
         PJS1StartShuffle,
         PJS1RiverAccess,
@@ -151,14 +150,23 @@ def after_option_groups_created(groups: list[OptionGroup]) -> list[OptionGroup]:
         PJS1VictoryKey
     ])
     
+    # 2. Define your custom Minigame category using class references
     minigames_group = OptionGroup("Minigame Options", [
         PJS1CheeseAndCrackers,
         PJS1NuggetsLevels,
         PJS1Potions
     ])
 
-    # Clear out any default groupings and append ours in strict order
-    groups.append(item_shuffle_group)
-    groups.append(minigames_group)
+    # 3. Find where "Item & Location Options" is sitting (usually at index 1)
+    # If found, we inject our groups right in front of it.
+    target_idx = len(groups)
+    for idx, group in enumerate(groups):
+        if "Location" in group.name or "Item" in group.name:
+            target_idx = idx
+            break
+
+    # 4. Insert our custom groups exactly above the Item/Location block
+    groups.insert(target_idx, item_shuffle_group)
+    groups.insert(target_idx + 1, minigames_group)
     
     return groups
