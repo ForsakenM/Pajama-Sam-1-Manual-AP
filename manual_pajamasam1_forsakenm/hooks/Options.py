@@ -141,30 +141,24 @@ def before_option_groups_created(groups: dict[str, list[Type[Choice]]]) -> dict[
     return groups
 
 def after_option_groups_created(groups: list[OptionGroup]) -> list[OptionGroup]:
-    # We build the custom visual groups in the precise order you want them displayed.
-    # Note: progression_balancing and accessibility are automatically grouped at the top by the WebHost.
+    # We build the custom visual groups using actual Class references instead of strings
     
     item_shuffle_group = OptionGroup("Item Shuffle Options", [
-        "starting_items_progression",
-        "river_access_shuffle",
-        "mine_access_shuffle",
-        "doors_of_knowledge_shuffle",
-        "closet_key_shuffle"
+        PJS1StartShuffle,
+        PJS1RiverAccess,
+        PJS1MineAccess,
+        PJS1DoorsOfKnowledge,
+        PJS1VictoryKey
     ])
     
     minigames_group = OptionGroup("Minigame Options", [
-        "cheese_and_crackers_logic",
-        "nuggets_levels",
-        "potions"
+        PJS1CheeseAndCrackers,
+        PJS1NuggetsLevels,
+        PJS1Potions
     ])
-    
-    traps_group = OptionGroup("Trap Options", [
-        "filler_traps"
-    ])
-    
+
     # Clear out any default groupings and append ours in strict order
     groups.append(item_shuffle_group)
     groups.append(minigames_group)
-    groups.append(traps_group)
     
     return groups
